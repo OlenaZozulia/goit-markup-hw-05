@@ -31,10 +31,20 @@
 
         <ul class="contacts-nav list">
           <li class="item">
-            <a href="mailto:info@devstudio.com" class="contacts link">info@devstudio.com</a>
+            <a href="mailto:info@devstudio.com" class="contacts link">
+              <svg class="contacts-nav-icon" width="16" height="12">
+                <use href="./images/icon.svg#envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
           </li>
           <li class="item">
-            <a href="tel:+380961111111" class="contacts link">+38 096 111 11 11</a>
+            <a href="tel:+380961111111" class="contacts link">
+              <svg class="contacts-nav-icon" width="16" height="12">
+                <use href="./images/icon.svg#smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
           </li>
         </ul>
       </nav>
@@ -60,7 +70,23 @@
           <ul class="portfolio-list list">
             <li class="item">
               <a href="" class="portfolio-card link">
-                <img src="./images/portfolio/project-1.jpg" alt="Назва сайту" width="370" />
+                <div class="overlay-card">
+                  <img
+                    class="img-portfolio"
+                    src="./images/portfolio/project-1.jpg"
+                    alt="Назва сайту"
+                    width="370"
+                  />
+                  <div class="overlay-portfolio">
+                    <p class="overlay-text">
+                      Lorem ipsum dolor sit amet consectet adipisicing elit. Eius veritatis facere
+                      praesentium voluptate repellendus voluptas quas a inventore culpa, illo error
+                      vitae, officia corrupti molestias delectus similique. Officia, repellat
+                      dolores
+                    </p>
+                  </div>
+                </div>
+
                 <div class="portfolio-content">
                   <h3 class="title">Технокряк</h3>
                   <p class="description">Веб-сайт</p>
@@ -69,7 +95,17 @@
             </li>
             <li class="item">
               <a href="" class="portfolio-card link">
-                <img src="./images/portfolio/project-2.jpg" alt="Назва постеру" width="370" />
+                <div class="overlay-card">
+                  <img src="./images/portfolio/project-2.jpg" alt="Назва постеру" width="370" />
+                  <div class="overlay-portfolio">
+                    <p class="overlay-text">
+                      Lorem ipsum dolor sit amet consectet adipisicing elit. Eius veritatis facere
+                      praesentium voluptate repellendus voluptas quas a inventore culpa, illo error
+                      vitae, officia corrupti molestias delectus similique. Officia, repellat
+                      dolores
+                    </p>
+                  </div>
+                </div>
                 <div class="portfolio-content">
                   <h3 class="title">Постер <span lang="en">New Orlean vs Golden Star</span></h3>
                   <p class="description">Дизайн</p>
@@ -78,53 +114,97 @@
             </li>
             <li class="item">
               <a href="" class="portfolio-card link">
-                <img src="./images/portfolio/project-3.jpg" alt="Назва ресторану" width="370" />
+                <div class="overlay-card">
+                  <img src="./images/portfolio/project-3.jpg" alt="Назва ресторану" width="370" />
+                  <div class="overlay-portfolio">
+                    <p class="overlay-text">
+                      Lorem ipsum dolor sit amet consectet adipisicing elit. Eius veritatis facere
+                      praesentium voluptate repellendus voluptas quas a inventore culpa, illo error
+                      vitae, officia corrupti molestias delectus similique. Officia, repellat
+                      dolores
+                    </p>
+                  </div>
+                </div>
                 <div class="portfolio-content">
                   <h3 class="title">Ресторан <span lang="en">Seafood</span></h3>
                   <p class="description">Додаток</p>
                 </div>
               </a>
             </li>
+
             <li class="item">
               <a href="" class="portfolio-card link">
-                <div class="portfolio-thumb">
+                <div class="overlay-card">
                   <img src="./images/portfolio/project-4.jpg" alt="Назва проекту" width="370" />
-
-                  <div class="portfolio-content">
-                    <h3 class="title">Проєкт <span lang="en">Prime</span></h3>
-                    <p class="description">Маркетинг</p>
+                  <div class="overlay-portfolio">
+                    <p class="overlay-text">
+                      Lorem ipsum dolor sit amet consectet adipisicing elit. Eius veritatis facere
+                      praesentium voluptate repellendus voluptas quas a inventore culpa, illo error
+                      vitae, officia corrupti molestias delectus similique. Officia, repellat
+                      dolores
+                    </p>
                   </div>
+                </div>
+
+                <div class="portfolio-content">
+                  <h3 class="title">Проєкт <span lang="en">Prime</span></h3>
+                  <p class="description">Маркетинг</p>
                 </div>
               </a>
             </li>
+
             <li class="item">
               <a href="" class="portfolio-card link">
-                <div class="portfolio-thumb">
+                <div class="overlay-card">
                   <img src="./images/portfolio/project-5.jpg" alt="Назва проекту" width="370" />
-
-                  <div class="portfolio-content">
-                    <h3 class="title">Проєкт <span lang="en">Boxes</span></h3>
-                    <p class="description">Додаток</p>
+                  <div class="overlay-portfolio">
+                    <p class="overlay-text">
+                      Lorem ipsum dolor sit amet consectet adipisicing elit. Eius veritatis facere
+                      praesentium voluptate repellendus voluptas quas a inventore culpa, illo error
+                      vitae, officia corrupti molestias delectus similique. Officia, repellat
+                      dolores
+                    </p>
                   </div>
+                </div>
+
+                <div class="portfolio-content">
+                  <h3 class="title">Проєкт <span lang="en">Boxes</span></h3>
+                  <p class="description">Додаток</p>
                 </div>
               </a>
             </li>
             <li class="item">
               <a href="" class="portfolio-card link">
-                <div class="portfolio-thumb">
+                <div class="overlay-card">
                   <img src="./images/portfolio/project-6.jpg" alt="Назва сайту" width="370" />
-
-                  <div class="portfolio-content">
-                    <h3 class="title" lang="en">Inspiration has no Borders</h3>
-                    <p class="description">Веб-сайт</p>
+                  <div class="overlay-portfolio">
+                    <p class="overlay-text">
+                      Lorem ipsum dolor sit amet consectet adipisicing elit. Eius veritatis facere
+                      praesentium voluptate repellendus voluptas quas a inventore culpa, illo error
+                      vitae, officia corrupti molestias delectus similique. Officia, repellat
+                      dolores
+                    </p>
                   </div>
+                </div>
+
+                <div class="portfolio-content">
+                  <h3 class="title" lang="en">Inspiration has no Borders</h3>
+                  <p class="description">Веб-сайт</p>
                 </div>
               </a>
             </li>
             <li class="item">
               <a href="" class="portfolio-card link">
-                <div class="portfolio-thumb">
+                <div class="overlay-card">
                   <img src="./images/portfolio/project-7.jpg" alt="Назва видання" width="370" />
+                  <div class="overlay-portfolio">
+                    <p class="overlay-text">
+                      Lorem ipsum dolor sit amet consectet adipisicing elit. Eius veritatis facere
+                      praesentium voluptate repellendus voluptas quas a inventore culpa, illo error
+                      vitae, officia corrupti molestias delectus similique. Officia, repellat
+                      dolores
+                    </p>
+                  </div>
                 </div>
 
                 <div class="portfolio-content">
@@ -135,8 +215,16 @@
             </li>
             <li class="item">
               <a href="" class="portfolio-card link">
-                <div class="portfolio-thumb">
+                <div class="overlay-card">
                   <img src="./images/portfolio/project-8.jpg" alt="Назва проекту" width="370" />
+                  <div class="overlay-portfolio">
+                    <p class="overlay-text">
+                      Lorem ipsum dolor sit amet consectet adipisicing elit. Eius veritatis facere
+                      praesentium voluptate repellendus voluptas quas a inventore culpa, illo error
+                      vitae, officia corrupti molestias delectus similique. Officia, repellat
+                      dolores
+                    </p>
+                  </div>
                 </div>
 
                 <div class="portfolio-content">
@@ -147,7 +235,17 @@
             </li>
             <li class="item">
               <a href="" class="portfolio-card link">
-                <img src="./images/portfolio/project-9.jpg" alt="Назва додатку" width="370" />
+                <div class="overlay-card">
+                  <img src="./images/portfolio/project-9.jpg" alt="Назва додатку" width="370" />
+                  <div class="overlay-portfolio">
+                    <p class="overlay-text">
+                      Lorem ipsum dolor sit amet consectet adipisicing elit. Eius veritatis facere
+                      praesentium voluptate repellendus voluptas quas a inventore culpa, illo error
+                      vitae, officia corrupti molestias delectus similique. Officia, repellat
+                      dolores
+                    </p>
+                  </div>
+                </div>
 
                 <div class="portfolio-content">
                   <h3 class="title" lang="en">Growing Business</h3>
