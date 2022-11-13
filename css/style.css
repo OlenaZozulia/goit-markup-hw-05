@@ -305,19 +305,6 @@ img {
 }
 /* fiter (buttons) for page Portfolio*/
 
-.button.second {
-  font-weight: 500;
-  line-height: 1.63;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
-  padding: 0;
-  min-width: 73px;
-}
-.button.second:hover,
-.button.second:focus {
-  color: var(--primary-white-color);
-  background-color: var(--accent-text-color);
-}
 /* Section  */
 .section {
   padding-top: 94px;
@@ -546,13 +533,31 @@ img {
   margin-left: 8px;
 }
 
+/*
 .button.second {
-  padding: 6px 22px;
   font-weight: 500;
   line-height: 1.63;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  padding: 0;
+  min-width: 73px;
+}
+.button.second:hover,
+.button.second:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-text-color);
+}
+
+*/
+
+.button.second {
+  padding: 6px 22px;
+  min-width: 73px;
+  font-weight: 500;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
   margin-bottom: 50px;
+  color: var(--primary-text-color);
   transition: color var(--animation-transform);
 }
 .button.second:hover,
@@ -562,8 +567,8 @@ img {
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.08),
     0 3px 1px rgba(0, 0, 0, 0.1);
   transition: color var(--animation-transform);
-  transition: background-color var(--animation-transform);
   transition: box-shadow var(--animation-transform);
+  transition: background-color var(--animation-transform);
 }
 
 /*
@@ -574,7 +579,6 @@ img {
 
 .portfolio-card:hover .portfolio-content {
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.12);
-  transition: box-shadow var(--animation-transform);
 }
 
 .portfolio-list {
@@ -750,15 +754,17 @@ img {
   fill: var(--primary-white-color);
   transition: fill var(--animation-transform);
 }
+/* modal window*/
 
 .backdrop {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 800px;
-  background: orange;
-  opacity: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(2px);
+  /*opacity: 0;*/
 }
 .backdrop.is-hidden {
 }
@@ -767,8 +773,16 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  min-width: 528px;
-  min-height: 581px;
+  transform: translateX(-50%) translateY(-50%);
+  width: 528px;
+  height: 581px;
   background-color: #ffffff;
+  border-radius: 4px;
+}
+
+.modal-btn {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 }
