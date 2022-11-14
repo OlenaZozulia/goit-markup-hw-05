@@ -360,6 +360,7 @@ img {
   height: 70px;
   padding: 27px;
   font-size: 14px;
+  font-weight: 700;
   line-height: calc(16 / 14);
   text-align: center;
   text-transform: uppercase;
@@ -495,6 +496,7 @@ img {
 .filter-list {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .filter-list .item + .item {
@@ -507,11 +509,9 @@ img {
   font-weight: 500;
   line-height: 1.63;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
   color: var(--primary-text-color);
-  transition: color var(--animation-transform);
-  transition: box-shadow var(--animation-transform);
-  transition: background-color var(--animation-transform);
+  transition: color var(--animation-transform), background-color var(--animation-transform),
+    box-shadow var(--animation-transform);
 }
 .button.second:hover,
 .button.second:focus {
@@ -665,6 +665,7 @@ img {
 .footer-icon .title {
   font-style: normal;
   font-size: 14px;
+  font-weight: 700;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-white-color);
@@ -729,17 +730,22 @@ img {
   visibility: hidden;
   pointer-events: none;
 }
+
+.backdrop.is-hidden .modal {
+  transform: scale(0.5);
+}
+
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translateX(-50%) translateY(-50%);
   width: 528px;
   height: 581px;
   background-color: #ffffff;
   border-radius: 4px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  transition: box-shadow var(--animation-transform);
+  transform: translate(-50%, -50%) scale(1);
+  transition: box-shadow var(--animation-transform), transform var(--animation-transform);
 }
 
 .modal-btn {
