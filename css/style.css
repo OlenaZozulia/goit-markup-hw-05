@@ -723,16 +723,18 @@ img {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(2px);
-  transition: opasity var(--animation-transform), visibility var(--animation-transform);
+  opacity: 1;
+  transition: opasity var(--animation-transform);
+  /*visibility var(--animation-transform);*/
 }
 .backdrop.is-hidden {
   opacity: 0;
-  visibility: hidden;
+  /*visibility: hidden;*/
   pointer-events: none;
 }
 
 .backdrop.is-hidden .modal {
-  transform: scale(0.5);
+  transform: translate(-50%, -50%) scale(0.5);
 }
 
 .modal {
@@ -740,7 +742,7 @@ img {
   top: 50%;
   left: 50%;
   width: 528px;
-  height: 581px;
+  min-height: 581px;
   background-color: #ffffff;
   border-radius: 4px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
